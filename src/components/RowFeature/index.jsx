@@ -12,7 +12,8 @@ const Container = styled.div`
     text-align: justify;
     
   }
-
+  
+  
   .item {
     min-width: 300px;
     max-width: 700px;  
@@ -27,6 +28,14 @@ const Container = styled.div`
   .row-white{
     background-color: #fff;
     flex-direction: row-reverse;
+  }
+
+  h2{
+    color: rgb(43, 76, 128);
+  }
+
+  span{
+    font-size: 18px;
   }
 
   @media (max-width: 768px) {
@@ -48,7 +57,7 @@ const RowFeature = ({ title, description, image, invert }) => {
           <h2>{title}</h2>
           <br />
           <br />
-          <h4>{description}</h4>
+          <span>{description}</span>
         </div>
       </div>
     </Container>

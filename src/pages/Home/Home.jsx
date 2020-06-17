@@ -3,17 +3,18 @@ import styled from 'styled-components';
 import bgImg from '../../assets/bg-intro-blue.png'
 import RowFeature from '../../components/RowFeature';
 import MapLeaflet from '../../components/MapLeaflet';
-import {PageContext} from '../../contexts/PageContext'
+import { PageContext } from '../../contexts/PageContext'
 import GridFeatures from '../../components/GridFeatures/GridFeatures';
 
 
 const HomeContainer = styled.div`
-  background-color: #f1f1f1;
+  background-color: #f6fafb;
   .container-intro{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #111;
+    background-color: #fff;
+
     background-image: url(${bgImg});
     background-size: cover;
     color: #fff;
@@ -29,9 +30,21 @@ const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 20px 20px;
   }
 
+  .announce-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 200px;
+  }
+
+  .announce-feature h1{
+    color: rgb(43, 76, 128);
+  }
   iframe{
     margin: 0 ;
     border: 0;
@@ -45,7 +58,7 @@ const Home = () => {
 
     useEffect(() => {
         setSelected(0)
-    },[])
+    }, [])
 
     const rows = [
         {
@@ -603,9 +616,19 @@ const Home = () => {
                     rows.map(row => <RowFeature key={row.title}  {...row} />)
                 }
             </div>
+            <div className='announce-feature'>
+                <h1>Comunicações unificadas e com muitos recursos</h1>
+                <br />
+                <br />
+                <br />
+                <h2>O AgoraIPBX vem equipado com recursos que permitem que sua empresa cresça enquanto
+                os usuários mantêm a produtividade e a abordagem profissional.
+                </h2>
+            </div>
             <GridFeatures />
             <div className="announce-customer">
                 <h1>Nossos clientes pela América do Sul</h1>
+
                 <h3>Nós temos clientes espalhados em mais de 90 cidades.</h3>
             </div>
             <MapLeaflet mapPoints={mapPoints} />
