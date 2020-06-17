@@ -88,17 +88,17 @@ const RightNav = ({ open, handleClick }) => {
   console.log(open)
   return (
     <Ul open={open}>
-      <Link to='/' onClick={() => { handleClick(!open) }}>
+      <Link to='/' onClick={() => { open && handleClick(!open) }}>
         <li className={selected === 0 ? "selected" : ""} >
           <h4>Inicio</h4>
         </li>
       </Link>
-      <Link to='/info' onClick={() => { handleClick(!open) }} >
+      <Link to='/info' onClick={() => {open &&  handleClick(!open) }} >
         <li className={selected === 1 ? "selected" : ""} >
           <h4>Sobre nós</h4>
         </li>
       </Link>
-      <Link to='/plans' onClick={() => { handleClick(!open) }}>
+      <Link to='/plans' onClick={() => { open &&  handleClick(!open) }}>
         <li className={selected === 2 ? "selected" : ""} >
           <h4>Planos</h4>
         </li>
