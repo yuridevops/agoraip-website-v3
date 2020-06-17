@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import { PageContext } from '../../contexts/PageContext'
 
 const Ul = styled.ul`
   list-style: none;
@@ -36,6 +37,7 @@ const Ul = styled.ul`
     color: #fff;
   }
 
+
   .button-sup{
     display: flex;
     flex-direction: column;
@@ -65,7 +67,7 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 50vw;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
 
@@ -81,20 +83,23 @@ const Ul = styled.ul`
 `;
 
 const RightNav = ({ open, handleClick }) => {
+
+  const { selected } = useContext(PageContext)
+
   return (
     <Ul open={open}>
-      <Link to='/'>
-        <li className="selected" onClick={() => { handleClick(!open) }}>
+      <Link to='/' onClick={() => { handleClick(!open) }}>
+        <li className={selected === 0 ? "selected" : ""} >
           <h4>Inicio</h4>
         </li>
       </Link>
       <Link to='/info' onClick={() => { handleClick(!open) }} >
-        <li>
+        <li className={selected === 1 ? "selected" : ""} >
           <h4>Sobre nós</h4>
         </li>
       </Link>
       <Link to='/plans' onClick={() => { handleClick(!open) }}>
-        <li>
+        <li className={selected === 2 ? "selected" : ""} >
           <h4>Planos</h4>
         </li>
       </Link>
@@ -109,7 +114,9 @@ const RightNav = ({ open, handleClick }) => {
       <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5541992724349" target="_blank">
         <li>
           <div className="button">
-            <h4>Entrar em contato</h4>
+            <center>
+              <h4>Entrar em contato</h4>
+            </center>
             <h5>(41) 99272-4349 <FaWhatsapp className="icon" color="#fff" fontSize={16} /></h5>
           </div>
         </li>

@@ -6,6 +6,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import Info from '../pages/Info';
 import Plans from '../pages/Plans'
 import Footer from '../components/Footer'
+import PageContextProvider from '../contexts/PageContext'
 
 const Main = styled.ul`
   margin-top: 72px;
@@ -16,16 +17,18 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
-        <Navbar />
-        <Main>
-          <Switch>
-            <Route exact path="/"component={Home} />
-            <Route path="/info"component={Info} />
-            <Route path="/plans"component={Plans} />
-            <Route exact path="**"component={Home} />
-          </Switch>
-        </Main>
-        <Footer/>
+        <PageContextProvider>
+          <Navbar />
+          <Main>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/info" component={Info} />
+              <Route path="/plans" component={Plans} />
+              <Route exact path="**" component={Home} />
+            </Switch>
+          </Main>
+          <Footer />
+        </PageContextProvider>
       </HashRouter>
     </div>
   );

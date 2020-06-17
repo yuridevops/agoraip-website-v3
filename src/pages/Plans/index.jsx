@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 import { FiCheckCircle, FiAward } from 'react-icons/fi'
+import {PageContext} from '../../contexts/PageContext'
 
 const Container = styled.div`
   display: grid;
@@ -74,6 +75,14 @@ const Container = styled.div`
 `;
 
 const Plans = () => {
+
+  const { setSelected } = useContext(PageContext)
+
+  useEffect(() => {
+    setSelected(2)
+  }, [])
+
+
   return (
     <div>
       <center>

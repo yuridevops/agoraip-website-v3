@@ -28,6 +28,8 @@ const MapLeaflet = ({ mapPoints }) => {
         touchZoom={false}
         zoomAnimation={false}
         dragging={false}
+        tap={false}
+        
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useContext, useEffect} from 'react'
 import RowFeature from '../../components/RowFeature'
 import styled from 'styled-components';
+import {PageContext} from '../../contexts/PageContext'
 
 const Container = styled.div`
   margin: 0;
@@ -14,6 +15,14 @@ const Container = styled.div`
 `;
 
 const Info = () => {
+
+  const { setSelected } = useContext(PageContext)
+
+  useEffect(() => {
+      setSelected(1)
+  },[])
+
+
   const rows = [
     {
       title: "Quem somos",
