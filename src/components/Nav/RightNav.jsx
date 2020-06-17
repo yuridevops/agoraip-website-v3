@@ -107,7 +107,7 @@ const RightNav = ({ open, handleClick }) => {
         <li>
           <div className="button-sup">
             <h4>Suporte</h4>
-            <h5>(11) 95277-2090 <FaWhatsapp color="#111" fontSize={16} /></h5>
+            <h5>(11) 95277-2090 <FaWhatsapp color="#5afc03" fontSize={16} /></h5>
           </div>
         </li>
       </a >
