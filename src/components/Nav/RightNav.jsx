@@ -85,7 +85,7 @@ const Ul = styled.ul`
 const RightNav = ({ open, handleClick }) => {
 
   const { selected } = useContext(PageContext)
-
+  console.log(open)
   return (
     <Ul open={open}>
       <Link to='/' onClick={() => { handleClick(!open) }}>
