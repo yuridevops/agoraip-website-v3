@@ -4,6 +4,7 @@ import bgImg from '../../assets/bg-intro-blue.png'
 import RowFeature from '../../components/RowFeature';
 import MapLeaflet from '../../components/MapLeaflet';
 import {PageContext} from '../../contexts/PageContext'
+import GridFeatures from '../../components/GridFeatures/GridFeatures';
 
 
 const HomeContainer = styled.div`
@@ -602,6 +603,7 @@ const Home = () => {
                     rows.map(row => <RowFeature key={row.title}  {...row} />)
                 }
             </div>
+            <GridFeatures />
             <div className="announce-customer">
                 <h1>Nossos clientes pela América do Sul</h1>
                 <h3>Nós temos clientes espalhados em mais de 90 cidades.</h3>

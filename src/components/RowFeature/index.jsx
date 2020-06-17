@@ -9,6 +9,7 @@ const Container = styled.div`
     flex-wrap: wrap;
     width: 100%;
     padding: 30px 0px;
+    text-align: justify;
     
   }
 
