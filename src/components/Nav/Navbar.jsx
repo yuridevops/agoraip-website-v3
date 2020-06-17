@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
 import Logo from '../../assets/agoraip-logo.png'
+
 const Nav = styled.nav`
   width: 100%;
   height: 72px;
@@ -20,12 +21,13 @@ const Nav = styled.nav`
   .logo {
     display: flex;
     padding: 15px 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .logo img{
     max-height: 100%;
+    max-width: 40%;
   }
 `;
 
