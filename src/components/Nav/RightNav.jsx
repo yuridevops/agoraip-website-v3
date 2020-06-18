@@ -33,8 +33,7 @@ const Ul = styled.ul`
     align-items: center;
     background-color: #1877f2;
     padding: 10px;
-    border: solid 1px #5e90bf;
-    border-radius: 2px;
+    border-radius: 3px;
     color: #fff;
   }
 

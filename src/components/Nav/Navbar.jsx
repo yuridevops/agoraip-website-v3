@@ -28,6 +28,7 @@ const Nav = styled.nav`
 
   .logo img{
     max-height: 100%;
+    filter: saturate(3),
   }
 
   @media (max-width: 768px) {
