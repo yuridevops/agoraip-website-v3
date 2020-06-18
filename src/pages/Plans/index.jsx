@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 import { FiCheckCircle, FiAward } from 'react-icons/fi'
-import {PageContext} from '../../contexts/PageContext'
+import { PageContext } from '../../contexts/PageContext'
 
 const Container = styled.div`
   display: grid;
@@ -9,6 +9,7 @@ const Container = styled.div`
   grid-template-areas: "p1 p2 p3";
   justify-content: space-around;
   align-items: center;
+
 
 
   .card{
@@ -22,6 +23,9 @@ const Container = styled.div`
     box-shadow: 0 0 0.5em #888888;
   }
 
+  h1{
+    color: rgb(43, 76, 128);
+  }
   .card-header{
     display: flex;
     justify-content: center;
@@ -84,9 +88,9 @@ const Plans = () => {
 
 
   return (
-    <div>
-      <center>
-        <h1>Temos planos para todos os clientes</h1>
+    <div style={{backgroundColor: "#f6fafb" }}>
+      <center style={{padding:40}}>
+        <h1 style={{color:'rgb(43, 76, 128)'}}>Temos planos para todos os clientes</h1>
       </center>
       <Container>
         <div className="p1 card">

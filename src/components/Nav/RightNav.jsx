@@ -31,7 +31,7 @@ const Ul = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #5e90bf;
+    background-color: #1877f2;
     padding: 10px;
     border: solid 1px #5e90bf;
     border-radius: 2px;

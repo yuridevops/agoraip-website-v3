@@ -11,7 +11,8 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #53565a;
+  background: rgb(148,148,148);
+  background: linear-gradient(133deg, rgba(148,148,148,1) 0%, rgba(66,64,74,1) 48%, rgba(0,38,46,1) 100%);
   opacity: 1;
   box-shadow: 0 0 0.3em #888888;
   z-index: 1;

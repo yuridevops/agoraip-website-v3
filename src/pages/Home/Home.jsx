@@ -5,6 +5,7 @@ import RowFeature from '../../components/RowFeature';
 import MapLeaflet from '../../components/MapLeaflet';
 import { PageContext } from '../../contexts/PageContext'
 import GridFeatures from '../../components/GridFeatures/GridFeatures';
+import { Link } from 'react-router-dom';
 
 
 const HomeContainer = styled.div`
@@ -25,15 +26,6 @@ const HomeContainer = styled.div`
     max-width: 600px;
   }
 
-  .announce-customer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px 20px;
-  }
-
   .announce-feature{
     display: flex;
     flex-direction: column;
@@ -45,6 +37,20 @@ const HomeContainer = styled.div`
   .announce-feature h1{
     color: rgb(43, 76, 128);
   }
+
+  .announce-feature a{
+    text-decoration: none;
+    transition: font-size 2s ease-in-out
+  }
+
+  .announce-feature a:hover{
+    font-size: 30px;
+  }
+
+  .announce-feature span{
+    color: rgb(43, 76, 128);
+  }
+
   iframe{
     margin: 0 ;
     border: 0;
@@ -599,7 +605,7 @@ const Home = () => {
                     <h1>
                         Bem vindo a AgoraIP!<br /><br />
                         <span style={{ fontSize: 24 }}>
-                            Aumente a <span style={{ color: '#5658DD' }}>produtividade</span> da sua equipe sem se preocupar com nada, conheça a central telefônica <span style={{ color: '#5658DD' }}>empresarial</span> em nuvem da AgoraIP.
+                            Aumente a <span style={{ color: '#1877f2' }}>produtividade</span> da sua equipe sem se preocupar com nada, conheça a central telefônica <span style={{ color: '#1877f2' }}>empresarial</span> em nuvem da AgoraIP.
                     </span>
                     </h1>
                 </div>
@@ -626,10 +632,14 @@ const Home = () => {
                 </h2>
             </div>
             <GridFeatures />
-            <div className="announce-customer">
-                <h1>Nossos clientes pela América do Sul</h1>
-
-                <h3>Nós temos clientes espalhados em mais de 90 cidades.</h3>
+            <div className="announce-feature">
+                <h1>Nossos clientes pela América latina</h1>
+                <br />
+                <br />
+                <br />
+                <h2>Temos clientes espalhados por mais de 90 cidades.<br />
+                    <a href='http://api.whatsapp.com/send?1=pt_BR&phone=5541992724349'><span>Faça parte na nossa família. Clique Aqui!</span></a>
+                </h2>
             </div>
             <MapLeaflet mapPoints={mapPoints} />
         </HomeContainer>
