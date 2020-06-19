@@ -15,6 +15,8 @@ const Ul = styled.ul`
     color: #fff;
     padding: 18px 5px;
     margin: 10px;
+    font-size: 12px;
+    font-weight: 600;
     transition: color 0.3s ease-in-out
   }
 
@@ -32,7 +34,7 @@ const Ul = styled.ul`
     justify-content: center;
     align-items: center;
     background-color: #1877f2;
-    padding: 10px;
+    padding:  5px 8px;
     border-radius: 3px;
     color: #fff;
   }
@@ -58,7 +60,7 @@ const Ul = styled.ul`
 
   .selected {
     border-bottom: solid 3px #5e90bf;
-    transition: border-bottom 0.3s ease-in-out;
+    transition: border-bottom 0.1s ease-in-out;
   }
 
   @media (max-width: 768px) {
@@ -110,7 +112,7 @@ const RightNav = ({ open, handleClick }) => {
         <li>
           <div className="button-sup">
             <span>Suporte</span>
-            <h5>(11) 95277-2090 <FaWhatsapp color="#5afc03" fontSize={16} /></h5>
+            <span>(11) 95277-2090 <FaWhatsapp color="#5afc03" fontSize={16} /></span>
           </div>
         </li>
       </a >
@@ -120,12 +122,12 @@ const RightNav = ({ open, handleClick }) => {
             <center>
               <span>Entrar em contato</span>
             </center>
-            <h5>(41) 99272-4349 <FaWhatsapp className="icon" color="#fff" fontSize={16} /></h5>
+            <span>(41) 99272-4349 <FaWhatsapp className="icon" color="#fff" fontSize={16} /></span>
           </div>
         </li>
       </a>
     </Ul>
-  )
+  ) 
 }
 
 export default RightNav

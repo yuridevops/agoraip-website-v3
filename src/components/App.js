@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 import PageContextProvider from '../contexts/PageContext'
 
 const Main = styled.ul`
-  margin-top: 72px;
+  margin-top: 60px;
   color: #444;
 `;
 

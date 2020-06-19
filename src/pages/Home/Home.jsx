@@ -5,7 +5,7 @@ import RowFeature from '../../components/RowFeature';
 import MapLeaflet from '../../components/MapLeaflet';
 import { PageContext } from '../../contexts/PageContext'
 import GridFeatures from '../../components/GridFeatures/GridFeatures';
-import { Link } from 'react-router-dom';
+import Carousel from '../../components/Carousel';
 
 
 const HomeContainer = styled.div`
@@ -59,6 +59,7 @@ const HomeContainer = styled.div`
 
 `;
 const Home = () => {
+
 
     const { setSelected } = useContext(PageContext)
 
@@ -600,7 +601,8 @@ const Home = () => {
 
     return (
         <HomeContainer>
-            <div className='container-intro' >
+            <Carousel/>
+            {/* <div className='container-intro' >
                 <div className='intro-text'>
                     <h1>
                         Bem vindo a AgoraIP!<br /><br />
@@ -616,7 +618,7 @@ const Home = () => {
                     allow="autoplay; fullscreen"
                 >
                 </iframe>
-            </div>
+            </div> */}
             <div>
                 {
                     rows.map(row => <RowFeature key={row.title}  {...row} />)
