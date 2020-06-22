@@ -12,6 +12,13 @@ const Container = styled.div`
   min-height: 25vh;
   color: #fff;
   padding: 20px 20px;
+
+  
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
 `;
 
 const Info = () => {

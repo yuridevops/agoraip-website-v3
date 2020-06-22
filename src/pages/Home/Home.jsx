@@ -51,11 +51,7 @@ const HomeContainer = styled.div`
     color: rgb(43, 76, 128);
   }
 
-  iframe{
-    margin: 0 ;
-    border: 0;
-    width: 600px;
-  }
+
 
 `;
 const Home = () => {
@@ -602,23 +598,6 @@ const Home = () => {
     return (
         <HomeContainer>
             <Carousel/>
-            {/* <div className='container-intro' >
-                <div className='intro-text'>
-                    <h1>
-                        Bem vindo a AgoraIP!<br /><br />
-                        <span style={{ fontSize: 24 }}>
-                            Aumente a <span style={{ color: '#1877f2' }}>produtividade</span> da sua equipe sem se preocupar com nada, conheça a central telefônica <span style={{ color: '#1877f2' }}>empresarial</span> em nuvem da AgoraIP.
-                    </span>
-                    </h1>
-                </div>
-                <iframe src="https://player.vimeo.com/video/66865270?color=ff0179"
-                    width="1300px"
-                    height="360"
-                    rameborder="0"
-                    allow="autoplay; fullscreen"
-                >
-                </iframe>
-            </div> */}
             <div>
                 {
                     rows.map(row => <RowFeature key={row.title}  {...row} />)

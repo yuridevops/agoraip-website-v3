@@ -8,8 +8,11 @@ const ContainerGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
-  padding: 100px;
-  background-color: #f6fafb;
+  justify-content: center;
+  padding: 40px;
+  align-items: center;
+
+
   .card{
     padding: 50px;
     display: flex;
