@@ -98,14 +98,19 @@ const RightNav = ({ open, handleClick }) => {
           <span>Inicio</span>
         </li>
       </Link>
-      <Link to='/info' onClick={() => {open &&  handleClick(!open) }} >
+      <Link to='/dids' onClick={() => { open &&  handleClick(!open) }}>
         <li className={selected === 1 ? "selected" : ""} >
-          <span>Sobre nós</span>
+          <span>Numeros DID</span>
         </li>
       </Link>
       <Link to='/plans' onClick={() => { open &&  handleClick(!open) }}>
         <li className={selected === 2 ? "selected" : ""} >
-          <span>Planos</span>
+          <span>PBX na Nuvem</span>
+        </li>
+      </Link>
+      <Link to='/info' onClick={() => {open &&  handleClick(!open) }} >
+        <li className={selected === 3 ? "selected" : ""} >
+          <span>Sobre nós</span>
         </li>
       </Link>
       <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511952772090" target="_blank">

@@ -5,24 +5,12 @@ import { FaFacebookF, FaWhatsapp, GrInstagram } from 'react-icons/all'
 const Footer = () => {
 
   const FooterContainer = styled.footer`
-    
-    border-top: solid 1px rgb(219, 219, 219);
-    height: 100px;
-
-  .footer-container{
-    background-color: rgb(66,64,74);
-    color: #fff;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .footer-container img{
-    width: 150px;  
-    padding-left: 20px; 
-  }
+    border-top: solid 1px rgb(219, 219, 219);
+    height: 100px;
+    overflow:hidden;
 
   .footer-itens{
     display: flex;
@@ -31,13 +19,17 @@ const Footer = () => {
     align-items: space-center;
   }
 
+  .footer-itens img{
+    height:30px;
+    margin-left:20px;
+  }
+
   .footer-partners{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: space-center;
     font-size: 12px;
-    margin: 0 12px;
   }
 
   .footer-iten{
@@ -81,35 +73,33 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <div className='footer-container'>
-        <div className='footer-itens'>
-          <img src={logo} style={whiteLogo} />
+      <div className='footer-itens'>
+        <img src={logo} style={whiteLogo} />
+      </div>
+      <div className='footer-itens'>
+        <div className="footer-announce">
+          <span>Siga nossas redes sociais: </span>
         </div>
-        <div className='footer-itens'>
-          <div className="footer-announce">
-            <span>Siga nossas redes sociais: </span>
-          </div>
-          <div className="footer-iten">
-            <FaFacebookF size={30} style={styleFace}  />
-          </div>
-          <div className="footer-iten">
-            <GrInstagram size={30} style={styleInsta} />
-          </div>
-          <div className="footer-iten">
-            <FaWhatsapp size={30} style={styleWhats} color='#5afc03'  />
-          </div>
-
-
+        <div className="footer-iten">
+          <FaFacebookF size={30} style={styleFace} />
         </div>
-        <div className='footer-partners'>
-          <center><h3>Parceiros </h3></center>
-
-          <div className="footer-partners">
-            <span>www.nuevatelecom.com.py</span>
-            <span>www.facebook.com</span>
-            <span>www.google.com</span>
-          </div>
+        <div className="footer-iten">
+          <GrInstagram size={30} style={styleInsta} />
         </div>
+        <div className="footer-iten">
+          <FaWhatsapp size={30} style={styleWhats} color='#5afc03' />
+        </div>
+      </div>
+
+      <div className='footer-partners'>
+        <center><h3>Parceiros </h3></center>
+
+        <div className="footer-partners">
+          <span>www.nuevatelecom.com.py</span>
+          <span>www.facebook.com</span>
+          <span>www.google.com</span>
+        </div>
+
       </div>
     </FooterContainer>
   )

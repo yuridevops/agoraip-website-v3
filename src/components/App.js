@@ -7,7 +7,8 @@ import Info from '../pages/Info';
 import Plans from '../pages/Plans'
 import Footer from '../components/Footer'
 import PageContextProvider from '../contexts/PageContext'
-
+import Did from '../pages/Did'
+import Products from '../pages/Products';
 const Main = styled.ul`
   margin-top: 60px;
   color: #444;
@@ -24,6 +25,8 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/info" component={Info} />
               <Route path="/plans" component={Plans} />
+              <Route path="/products" component={Products} />
+              <Route path="/dids" component={Did} />
               <Route exact path="**" component={Home} />
             </Switch>
           </Main>

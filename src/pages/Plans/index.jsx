@@ -4,13 +4,12 @@ import { FiCheckCircle, FiAward } from 'react-icons/fi'
 import { PageContext } from '../../contexts/PageContext'
 
 const Container = styled.div`
+
   display: grid;
   grid-auto-rows: 1fr 1fr 1fr;
   grid-template-areas: "p1 p2 p3";
   justify-content: space-around;
   align-items: center;
-
-
 
   .card{
     display: flex;

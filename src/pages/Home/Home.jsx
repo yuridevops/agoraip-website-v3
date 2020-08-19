@@ -65,6 +65,12 @@ const Home = () => {
 
     const rows = [
         {
+            title: "Linha Telefônica Virtual (DID)",
+            description: "Você pode falar com tarifas super reduzidas no seu telefone IP, FIXO ou MÓVEL. As ligações recebidas também são entregues onde você desejar.",
+            image: "telefonin.png",
+            invert: true
+        },
+        {
             title: "Administre seu sistema telefônico empresarial de qualquer lugar.",
             description: "Administre todo o seu sistema telefônico de onde estiver e monitore os relatórios analíticos de chamadas utilizando os aplicativos personalizados da AgoraIP. Gaste menos tempo fazendo alterações simples no seu PABX hospedado e mais tempo com o crescimento sua empresa.",
             image: "devices.png"
