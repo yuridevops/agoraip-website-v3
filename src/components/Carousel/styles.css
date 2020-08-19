@@ -18,3 +18,8 @@
   --content-background-color: #2f2f2f; 
 }
 
+.carousel-img{
+  z-index: 0;
+}
+
+

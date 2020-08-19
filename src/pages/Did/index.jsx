@@ -18,11 +18,6 @@ const Container = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
   }
-
-  a img{
-    display:flex;
-  }
-
 `;
 
 const Title = styled.div`
@@ -45,8 +40,7 @@ const Announce = styled.div`
 `
 
 const ImageAnnounce = styled.img`
-  flex: 1;
-  max-width: 800px;
+  width: 100%;
   margin: 20px 0px;
 `
 
@@ -60,7 +54,7 @@ const Button = styled.button`
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 300px;
   height: 50px;
   background-color: #1877f2;
   color: white;

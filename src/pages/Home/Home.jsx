@@ -31,7 +31,8 @@ const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 50px 200px;
+    margin: 50px auto;
+    overflow: hidden;
   }
 
   .announce-feature h1{
