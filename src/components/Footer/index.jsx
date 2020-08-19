@@ -96,8 +96,6 @@ const Footer = () => {
 
         <div className="footer-partners">
           <span>www.nuevatelecom.com.py</span>
-          <span>www.facebook.com</span>
-          <span>www.google.com</span>
         </div>
 
       </div>
