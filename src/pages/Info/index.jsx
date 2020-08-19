@@ -26,7 +26,7 @@ const Info = () => {
   const { setSelected } = useContext(PageContext)
 
   useEffect(() => {
-      setSelected(3)
+      setSelected(4)
   },[])
 
 

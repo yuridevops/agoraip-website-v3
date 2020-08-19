@@ -108,8 +108,13 @@ const RightNav = ({ open, handleClick }) => {
           <span>PBX na Nuvem</span>
         </li>
       </Link>
-      <Link to='/info' onClick={() => {open &&  handleClick(!open) }} >
+      <Link to='/products' onClick={() => { open &&  handleClick(!open) }}>
         <li className={selected === 3 ? "selected" : ""} >
+          <span>Produtos</span>
+        </li>
+      </Link>
+      <Link to='/info' onClick={() => {open &&  handleClick(!open) }} >
+        <li className={selected === 4 ? "selected" : ""} >
           <span>Sobre nós</span>
         </li>
       </Link>

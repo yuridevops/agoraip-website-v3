@@ -1,7 +1,5 @@
-import React from 'react'
+import React, {useEffect, useContext} from 'react'
 import styled from 'styled-components'
-import { MdHeadsetMic, MdStayCurrentPortrait, MdPhoneForwarded, MdVoicemail, MdGroup, MdScreenShare, MdDialerSip, MdCloudQueue } from 'react-icons/md'
-import { MdVideoLabel } from 'react-icons/md'
 import ucm6202 from '../../assets/ucm6202.jpg'
 import ucm6204 from '../../assets/ucm6204.png'
 import ucm6208 from '../../assets/ucm6208.jpg'
@@ -12,6 +10,7 @@ import gxp1630 from '../../assets/gxp1630.jpg'
 import dp722 from '../../assets/dp722.jpg'
 import dp752 from '../../assets/dp752.jpg'
 import gvc3210 from '../../assets/gvc3210.jpg'
+import {PageContext} from '../../contexts/PageContext'
 
 const Container = styled.div`
   display:flex;
@@ -116,6 +115,13 @@ const ContainerGrid = styled.div`
 `;
 
 const Products = () => {
+
+  const { setSelected } = useContext(PageContext)
+
+  useEffect(() => {
+      setSelected(3)
+  },[])
+
   return (
     <Container>
       <div className='title'>Centrais Telefônicas</div>
